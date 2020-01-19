@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Users View</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Surnameame</th>
+
+        </thead>
+        <tbody>
+        <tr th:each=""user : ${allusers}"}>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.surname}"></td>
+        <td th:text="${user.login}"></td>
+
+        </tr>
+
+
+        </tbody>
+    </table>
+</body>
+</html>
